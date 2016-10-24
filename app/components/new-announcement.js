@@ -22,6 +22,11 @@ export default Ember.Component.extend({
       };
       this.set('addNewAnnouncement', false);
       this.sendAction('saveAnnouncement', params);
+      var controller = this;
+      controller.set('title', '');
+      controller.set('type', '');
+      controller.set('message', '');
+      controller.set('date', '');
     }
   }
 });

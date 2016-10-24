@@ -1,3 +1,4 @@
+
 <h1> Welcome to Super Rentals </h1>
 
 {{latest-announcement announcement=latestAnnouncement}}
@@ -7,7 +8,7 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each rentals as |rental|}}
-    {{rental-tile rental=rental destroyRental="destroyRental"}}
+    {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 

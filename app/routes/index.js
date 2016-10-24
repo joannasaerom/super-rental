@@ -2,7 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('rental');
+    return Ember.RSVP.hash({
+      rentals: this.store.findAll('rental'),
+      latestAnnouncement: this.store.findAll('announcement').then(function(announcements) {
+        return announcements.sortBy('date').reverse().objectAt([0]);
+      })
+    });
+  },
+  setupController(controller, models){
+    controller.set('rentals', models.rentals);
+    controller.set('latestAnnouncement', models.latestAnnouncement);
   },
 
   actions: {

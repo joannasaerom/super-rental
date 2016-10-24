@@ -12,11 +12,13 @@ export default Ember.Component.extend({
     },
 
     saveAnnouncement() {
+      var parsedDate = new Date(this.get('date'));
+      parsedDate.setTime(parsedDate.getTime() + parsedDate.getTimezoneOffset()*60*1000);
       var params = {
         title: this.get('title'),
         type: this.get('type'),
         message: this.get('message'),
-        date: new Date(this.get('date')),
+        date: parsedDate,
       };
       this.set('addNewAnnouncement', false);
       this.sendAction('saveAnnouncement', params);

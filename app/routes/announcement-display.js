@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    //return this.store.findAll('announcement');
     return Ember.RSVP.hash({
       announcementTypes: this.store.findAll('announcementType'),
       announcements: this.store.findAll('announcement')

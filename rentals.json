@@ -16,5 +16,28 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+  }],
+ "announcements": [{
+  "title": "Possibly snow",
+  "type": "weather",
+  "message": "might snow",
+  "date": "2016-01-03"
+}, {
+  "title": "2 day sale",
+  "type": "sale",
+  "message": "Rental prices are off 20%",
+  "date": "2016-10-22"
+}, {
+  "title": "Test",
+  "type": "company news",
+  "message": "we have a new CEO",
+  "date": "2016-09-22"
+  }],
+"announcementTypes": [{
+    "type": "weather"
+  }, {
+    "type": "sale"
+  }, {
+    "type": "company news"
   }]
 }

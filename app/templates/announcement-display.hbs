@@ -1,0 +1,13 @@
+{{#each announcements as |announcement|}}
+  <h3>{{announcement.title}}</h3>
+  <p>{{announcement.type}}</p>
+  <p>{{announcement.message}}</p>
+  <p>{{announcement.date}}</p>
+  <button {{action 'delete' announcement}}>Delete announcement</button>
+  <hr>
+{{/each}}
+
+
+{{new-announcement saveAnnouncement="saveAnnouncement" announcementTypes=announcementTypes}}
+
+{{#link-to 'index'}}Home{{/link-to}}

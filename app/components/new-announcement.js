@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         title: this.get('title'),
         type: this.get('type'),
         message: this.get('message'),
-        date: this.get('date'),
+        date: new Date(this.get('date')),
       };
       this.set('addNewAnnouncement', false);
       this.sendAction('saveAnnouncement', params);

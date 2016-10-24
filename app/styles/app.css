@@ -1,0 +1,6 @@
+form{
+  display: table;
+}
+input, label{
+  display: table-cell;
+}

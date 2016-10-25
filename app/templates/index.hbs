@@ -1,14 +1,16 @@
+{{latest-announcement announcement=latestAnnouncement}}
 <div class="intro">
-  <h1> Welcome to Super Rentals </h1>
-  <p>Super Rentals is your go-to website to find your dream rental! From apartments to townhouses, Super Rentals offers you a variety of housing options that will suite your needs.</p>
+  <div class="introText">
+    <h1>SUPER RENTAL</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1430285561322-7808604715df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=b08d6d0b6e980ef47973c6d537b50e5e" class="img-responsive">
 </div>
 
-{{latest-announcement announcement=latestAnnouncement}}
-
-<ul>
+<div class="propertyList">
   {{#each rentals as |rental|}}
     {{rental-tile rental=rental}}
   {{/each}}
-</ul>
+</div>
 
 {{new-rental saveRental2="saveRental3"}}

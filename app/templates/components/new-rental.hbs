@@ -27,9 +27,9 @@
         {{input required="required" value=image id="image"}}
       </div>
 
-      <button>Save</button>
+      <button class="btn btn-default">Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'rentalFormShow'}}>New Rental</button>
+  <button class="btn btn-default" {{action 'rentalFormShow'}}>New Rental</button>
 {{/if}}

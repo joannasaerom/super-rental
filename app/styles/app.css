@@ -1,3 +1,6 @@
+body{
+  font-family: 'Droid Sans', sans-serif;
+}
 form{
   display: table;
 }
@@ -8,4 +11,64 @@ input, label{
   list-style-type: none;
   float: right;
   padding: 10px;
+}
+img.logo{
+  width: 25px;
+}
+.nav, .navbar{
+  margin-bottom: 5%;
+}
+.nav li {
+  font-size: 20px;
+}
+.nav a, a{
+  color: black;
+}
+.nav a:hover{
+  border-radius: 0px;
+}
+a:hover{
+  text-decoration: none;
+  color: #023056;
+}
+.introText{
+  width: 80%;
+  margin-left: 10%;
+  border: 5px solid white;
+  margin-top: 20%;
+  padding: 25px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+.introText h1{
+  font-family: 'Mada', sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+.introText p{
+  font-size: 20px;
+}
+.well{
+  padding: 2px;
+  background-color: rgba(255, 0, 0, 0.4);
+  border: 2px solid #ff0000;
+}
+.intro{
+  position: relative;
+  margin-top: 5%;
+}
+.introText{
+  position: absolute;
+}
+.btn, .btn-default{
+  border: 3px solid black;
+  border-radius: 0px;
+  font-weight: bolder;
+  color: black;
+}
+.btn-default:hover{
+  background-color: white;
+  border-radius: 0px;
+  color: #023056;
+  border: 3px solid #023056;
 }

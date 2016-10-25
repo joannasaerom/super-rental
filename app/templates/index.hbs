@@ -1,10 +1,9 @@
-
-<h1> Welcome to Super Rentals </h1>
+<div class="intro">
+  <h1> Welcome to Super Rentals </h1>
+  <p>Super Rentals is your go-to website to find your dream rental! From apartments to townhouses, Super Rentals offers you a variety of housing options that will suite your needs.</p>
+</div>
 
 {{latest-announcement announcement=latestAnnouncement}}
-
-
-We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each rentals as |rental|}}
@@ -13,7 +12,3 @@ We hope you find exactly what you're looking for in a place to stay.
 </ul>
 
 {{new-rental saveRental2="saveRental3"}}
-
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
-{{#link-to 'announcement-display'}}Important announcements{{/link-to}}

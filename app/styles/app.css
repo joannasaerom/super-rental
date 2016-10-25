@@ -4,3 +4,8 @@ form{
 input, label{
   display: table-cell;
 }
+.navigation li{
+  list-style-type: none;
+  float: right;
+  padding: 10px;
+}

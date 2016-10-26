@@ -18,11 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyB2zoHMR7K2F-ZQnbYUPZ3g-3yudvC5ms4",
-      authDomain: "therold-d3271.firebaseapp.com",
-      databaseURL: "https://therold-d3271.firebaseio.com",
-      storageBucket: "therold-d3271.appspot.com",
-      messagingSenderId: "1000801793749"
+      apiKey: "AIzaSyA95BuKfgM0ob0QaosjOvkxd_EQpmngFu4",
+      authDomain: "super-rentals-11bea.firebaseapp.com",
+      databaseURL: "https://super-rentals-11bea.firebaseio.com",
+      storageBucket: "super-rentals-11bea.appspot.com"
 
     },
 

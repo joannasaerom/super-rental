@@ -1,5 +1,6 @@
 body{
   font-family: 'Droid Sans', sans-serif;
+  background-color: #F7F7F7;
 }
 form{
   display: table;
@@ -16,7 +17,7 @@ img.logo{
   width: 25px;
 }
 .nav, .navbar{
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .nav li {
   font-size: 20px;
@@ -48,14 +49,18 @@ a:hover{
 .introText p{
   font-size: 20px;
 }
-.well{
+.announcement{
   padding: 2px;
   background-color: rgba(255, 0, 0, 0.4);
   border: 2px solid #ff0000;
 }
+.announcement p{
+  padding-top: 8px;
+  padding-left: 10px;
+}
 .intro{
   position: relative;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .introText{
   position: absolute;
@@ -71,4 +76,19 @@ a:hover{
   border-radius: 0px;
   color: #023056;
   border: 3px solid #023056;
+}
+.propertyList img{
+  width: 200px;
+  margin-left: 15%;
+}
+.well {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+}
+.well h2{
+  font-size: 20px;
 }

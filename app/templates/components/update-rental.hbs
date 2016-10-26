@@ -23,6 +23,11 @@
     </div>
 
     <div class="form-group">
+      <label for="price">Rent Price</label>
+      {{input value=price id="price" placeholder=rental.price}}
+    </div>
+
+    <div class="form-group">
       <label for="image">Image URL</label>
       {{input value=image id="image" placeholder=rental.image}}
     </div>
@@ -31,5 +36,5 @@
   </form>
 </div>
 {{else}}
-  <button {{action 'updateRentalForm' rental}}>Update</button>
+  <button class="btn btn-default" {{action 'updateRentalForm'}}>Update</button>
 {{/if}}

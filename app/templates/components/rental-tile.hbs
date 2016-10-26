@@ -1,17 +1,19 @@
 <div class="well">
-  {{#link-to 'rental' rental.id}}
-    <div class="row">
-      <div class="col-sm-6">
-        <img class="img-responsive" src={{rental.image}}>
+  <div class="row">
+    <div class="col-sm-6 tileImage">
+      <div  class="imageAbove">
+        <h2>${{rental.price}}</h2>
       </div>
+      <img class="img-responsive" src={{rental.image}}>
+    </div>
+    {{#link-to 'rental' rental.id}}
       <div class="col-sm-6">
         <h2>Owner: {{rental.owner}}</h2>
         <h2>Rental Type: {{rental.type}}</h2>
         <h2>Location: {{rental.city}}</h2>
-        <h2>Rental Price: {{rental.price}}</h2>
       </div>
-    </div>
-  {{/link-to}}
+    {{/link-to}}
+  </div>
 </div>
   <!-- {{#if isImageShowing }} -->
     <!-- <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p> -->

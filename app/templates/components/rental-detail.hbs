@@ -1,6 +1,12 @@
-Located in {{rental.city}}, this {{rental.bedrooms}} bedroom {{rental.type}} is available by arrangement through {{rental.owner}}.
-Price: {{rental.price}}
+<h1>{{rental.type}} in {{rental.city}}</h1>
+<h2>About this listing</h2>
+<h2>{{rental.description}}</h2>
+<h2>Details</h2>
+<h2>Number of Bedrooms: {{rental.bedrooms}}</h2>
+<h2>Rental Type: {{rental.type}}</h2>
+<h2>Rental Price: ${{rental.price}}</h2>
+
 <br>
-<p><img src={{rental.image}} alt={{rental.type}}></p>
+<p><img src={{rental.image}} alt={{rental.type}} class="img-responsive estatePic"></p>
 
 <button class="btn btn-default" {{action 'delete' rental}}>Delete</button>
